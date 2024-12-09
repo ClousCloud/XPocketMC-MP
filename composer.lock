@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "833c1bb38c1ceaf36938a4d9fd0b7978",
+    "content-hash": "0d5cfd0ac7d702fc40e7461568928cab",
     "packages": [
         {
             "name": "adhocore/json-comment",
@@ -221,10 +221,10 @@
                 "ext-json": "*",
                 "php": "^8.1",
                 "pocketmine/binaryutils": "^0.2.0",
+                "ramsey/uuid": "^4.1",
                 "xpocketmc/color": "^0.2.0 || ^0.3.0",
                 "xpocketmc/math": "^0.3.0 || ^0.4.0 || ^1.0.0",
-                "xpocketmc/nbt": "^1.0.0",
-                "ramsey/uuid": "^4.1"
+                "xpocketmc/nbt": "^1.0.0"
             },
             "require-dev": {
                 "phpstan/phpstan": "1.10.59",
@@ -342,44 +342,6 @@
             "time": "2020-12-11T01:45:37+00:00"
         },
         {
-            "name": "xpocketmc/color",
-            "version": "0.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pmmp/Color.git",
-                "reference": "a0421f1e9e0b0c619300fb92d593283378f6a5e1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pmmp/Color/zipball/a0421f1e9e0b0c619300fb92d593283378f6a5e1",
-                "reference": "a0421f1e9e0b0c619300fb92d593283378f6a5e1",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "1.10.3",
-                "phpstan/phpstan-strict-rules": "^1.2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "pocketmine\\color\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0"
-            ],
-            "description": "Color handling library used by PocketMine-MP and related projects",
-            "support": {
-                "issues": "https://github.com/pmmp/Color/issues",
-                "source": "https://github.com/pmmp/Color/tree/0.3.1"
-            },
-            "time": "2023-04-10T11:38:05+00:00"
-        },
-        {
             "name": "pocketmine/errorhandler",
             "version": "0.7.0",
             "source": {
@@ -481,89 +443,6 @@
                 "source": "https://github.com/pmmp/Log/tree/0.4.0"
             },
             "time": "2021-06-18T19:08:09+00:00"
-        },
-        {
-            "name": "xpocketmc/math",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pmmp/Math.git",
-                "reference": "dc132d93595b32e9f210d78b3c8d43c662a5edbf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pmmp/Math/zipball/dc132d93595b32e9f210d78b3c8d43c662a5edbf",
-                "reference": "dc132d93595b32e9f210d78b3c8d43c662a5edbf",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.0",
-                "php-64bit": "*"
-            },
-            "require-dev": {
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "~1.10.3",
-                "phpstan/phpstan-strict-rules": "^1.0",
-                "phpunit/phpunit": "^8.5 || ^9.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "pocketmine\\math\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0"
-            ],
-            "description": "PHP library containing math related code used in PocketMine-MP",
-            "support": {
-                "issues": "https://github.com/pmmp/Math/issues",
-                "source": "https://github.com/pmmp/Math/tree/1.0.0"
-            },
-            "time": "2023-08-03T12:56:33+00:00"
-        },
-        {
-            "name": "xpocketmc/nbt",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pmmp/NBT.git",
-                "reference": "20540271cb59e04672cb163dca73366f207974f1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pmmp/NBT/zipball/20540271cb59e04672cb163dca73366f207974f1",
-                "reference": "20540271cb59e04672cb163dca73366f207974f1",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4 || ^8.0",
-                "php-64bit": "*",
-                "pocketmine/binaryutils": "^0.2.0"
-            },
-            "require-dev": {
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "1.10.25",
-                "phpstan/phpstan-strict-rules": "^1.0",
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "pocketmine\\nbt\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0"
-            ],
-            "description": "PHP library for working with Named Binary Tags",
-            "support": {
-                "issues": "https://github.com/pmmp/NBT/issues",
-                "source": "https://github.com/pmmp/NBT/tree/1.0.0"
-            },
-            "time": "2023-07-14T13:01:49+00:00"
         },
         {
             "name": "pocketmine/netresearch-jsonmapper",
@@ -1207,6 +1086,127 @@
                 }
             ],
             "time": "2024-04-18T09:22:46+00:00"
+        },
+        {
+            "name": "xpocketmc/color",
+            "version": "0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmmp/Color.git",
+                "reference": "a0421f1e9e0b0c619300fb92d593283378f6a5e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmmp/Color/zipball/a0421f1e9e0b0c619300fb92d593283378f6a5e1",
+                "reference": "a0421f1e9e0b0c619300fb92d593283378f6a5e1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "1.10.3",
+                "phpstan/phpstan-strict-rules": "^1.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pocketmine\\color\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "description": "Color handling library used by PocketMine-MP and related projects",
+            "support": {
+                "issues": "https://github.com/pmmp/Color/issues",
+                "source": "https://github.com/pmmp/Color/tree/0.3.1"
+            },
+            "time": "2023-04-10T11:38:05+00:00"
+        },
+        {
+            "name": "xpocketmc/math",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmmp/Math.git",
+                "reference": "dc132d93595b32e9f210d78b3c8d43c662a5edbf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmmp/Math/zipball/dc132d93595b32e9f210d78b3c8d43c662a5edbf",
+                "reference": "dc132d93595b32e9f210d78b3c8d43c662a5edbf",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0",
+                "php-64bit": "*"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "~1.10.3",
+                "phpstan/phpstan-strict-rules": "^1.0",
+                "phpunit/phpunit": "^8.5 || ^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pocketmine\\math\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "description": "PHP library containing math related code used in PocketMine-MP",
+            "support": {
+                "issues": "https://github.com/pmmp/Math/issues",
+                "source": "https://github.com/pmmp/Math/tree/1.0.0"
+            },
+            "time": "2023-08-03T12:56:33+00:00"
+        },
+        {
+            "name": "xpocketmc/nbt",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pmmp/NBT.git",
+                "reference": "20540271cb59e04672cb163dca73366f207974f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pmmp/NBT/zipball/20540271cb59e04672cb163dca73366f207974f1",
+                "reference": "20540271cb59e04672cb163dca73366f207974f1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0",
+                "php-64bit": "*",
+                "pocketmine/binaryutils": "^0.2.0"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "1.10.25",
+                "phpstan/phpstan-strict-rules": "^1.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pocketmine\\nbt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "description": "PHP library for working with Named Binary Tags",
+            "support": {
+                "issues": "https://github.com/pmmp/NBT/issues",
+                "source": "https://github.com/pmmp/NBT/tree/1.0.0"
+            },
+            "time": "2023-07-14T13:01:49+00:00"
         }
     ],
     "packages-dev": [
@@ -1505,21 +1505,21 @@
         },
         {
             "name": "phpstan/phpstan-phpunit",
-            "version": "1.3.16",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-phpunit.git",
-                "reference": "d5242a59d035e46774f2e634b374bc39ff62cb95"
+                "reference": "f3ea021866f4263f07ca3636bf22c64be9610c11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/d5242a59d035e46774f2e634b374bc39ff62cb95",
-                "reference": "d5242a59d035e46774f2e634b374bc39ff62cb95",
+                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/f3ea021866f4263f07ca3636bf22c64be9610c11",
+                "reference": "f3ea021866f4263f07ca3636bf22c64be9610c11",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2 || ^8.0",
-                "phpstan/phpstan": "^1.10"
+                "phpstan/phpstan": "^1.11"
             },
             "conflict": {
                 "phpunit/phpunit": "<7.0"
@@ -1551,9 +1551,9 @@
             "description": "PHPUnit extensions and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-phpunit/issues",
-                "source": "https://github.com/phpstan/phpstan-phpunit/tree/1.3.16"
+                "source": "https://github.com/phpstan/phpstan-phpunit/tree/1.4.0"
             },
-            "time": "2024-02-23T09:51:20+00:00"
+            "time": "2024-04-20T06:39:00+00:00"
         },
         {
             "name": "phpstan/phpstan-strict-rules",
